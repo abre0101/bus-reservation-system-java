@@ -1,0 +1,66 @@
+@charset "UTF-8";
+/* my.css */
+
+/* General body styles */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #66CCFF; /* Light blue background */
+    margin: 0;
+    padding: 20px;
+}
+
+/* Style for links */
+a {
+    color: #FFFFFF; /* White color for links */
+    text-decoration: none; /* Remove underline */
+    padding: 10px;
+    border-radius: 5px;
+}
+
+a:hover {
+    background-color: #0056b3; /* Darker blue on hover */
+}
+
+/* Form styles */
+form {
+    background-color: #FFFFFF; /* White background for forms */
+    padding: 20px;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+/* Input styles */
+input[type="text"],
+input[type="submit"],
+input[type="reset"] {
+    width: 100%; /* Full width */
+    padding: 10px; /* Padding for inputs */
+    margin: 5px 0; /* Space between inputs */
+    border: 1px solid #ccc; /* Light gray border */
+    border-radius: 4px; /* Rounded corners */
+}
+
+/* Button styles */
+input[type="submit"],
+input[type="reset"] {
+    background-color: #4CAF50; /* Green background */
+    color: white; /* White text */
+    cursor: pointer; /* Pointer cursor on hover */
+}
+
+input[type="submit"]:hover,
+input[type="reset"]:hover {
+    background-color: #45a049; /* Darker green on hover */
+}
+
+/* Error message styles */
+font[color="red"] {
+    color: red; /* Red color for error messages */
+}
+
+/* Footer styles */
+footer {
+    text-align: center;
+    margin-top: 500px;
+    color: #FFFFFF; /* White color for footer text */
+}

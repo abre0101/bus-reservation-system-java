@@ -1,0 +1,54 @@
+@charset "UTF-8";
+/* style/my.css */
+
+body {
+    background-color: #66CCFF; /* Background color for the body */
+    font-family: Arial, sans-serif; /* Font family for the text */
+    margin: 0; /* Remove default margin */
+    padding: 0; /* Remove default padding */
+}
+
+h1 {
+    color: #cc6600; /* Color for the main heading */
+}
+
+h2 {
+    color: #ffffff; /* Color for the subheading */
+}
+
+table {
+    width: 800px; /* Set the width of the table */
+    margin: 0 auto; /* Center the table */
+    border-collapse: collapse; /* Collapse borders */
+}
+
+th {
+    background-color: #cc6600; /* Background color for table header */
+    color: white; /* Text color for table header */
+    padding: 10px; /* Padding for table header */
+}
+
+td {
+    padding: 10px; /* Padding for table cells */
+}
+
+input[type="submit"], input[type="reset"] {
+    background-color: #cc6600; /* Background color for buttons */
+    color: white; /* Text color for buttons */
+    border: none; /* Remove border */
+    padding: 10px 20px; /* Padding for buttons */
+    cursor: pointer; /* Change cursor to pointer */
+}
+
+input[type="submit"]:hover, input[type="reset"]:hover {
+    background-color: #ff9900; /* Change background color on hover */
+}
+
+a {
+    color: white; /* Link color */
+    text-decoration: none; /* Remove underline from links */
+}
+
+a:hover {
+    text-decoration: underline; /* Underline links on hover */
+}

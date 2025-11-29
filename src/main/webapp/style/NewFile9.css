@@ -1,0 +1,43 @@
+@charset "UTF-8";
+/* NewFile6.css */
+
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #66CCFF; /* Background color for the body */
+}
+
+h1 {
+    color: #333; /* Color for headings */
+    text-align: center; /* Center the heading */
+}
+
+ul {
+    list-style-type: none; /* Remove bullet points */
+    padding: 0; /* Remove padding */
+}
+
+li {
+    display: inline; /* Display list items inline */
+    margin-right: 20px; /* Space between items */
+}
+
+a {
+    text-decoration: none; /* Remove underline from links */
+    color: #fff; /* Link color */
+    padding: 10px 15px; /* Padding around links */
+    background-color: #007BFF; /* Background color for links */
+    border-radius: 5px; /* Rounded corners */
+}
+
+a:hover {
+    background-color: #0056b3; /* Darker background on hover */
+}
+
+footer {
+    text-align: center; /* Center footer text */
+    padding: 10px; /* Padding for footer */
+    background-color: #333; /* Footer background color */
+    color: white; /* Footer text color */
+ margin-top:400px;}

@@ -1,0 +1,243 @@
+/* Modern styling for the login page */
+@charset "UTF-8";
+/* Modern CSS with Best Practices for Support Request System */
+:root {
+    --primary-color: #2196F3;
+    --secondary-color: #FFC107;
+    --success-color: #4CAF50;
+    --danger-color: #f44336;
+    --text-primary: #333333;
+    --text-secondary: #666666;
+    --background-primary: #f5f5f5;
+    --background-secondary: #ffffff;
+    --shadow-color: rgba(0, 0, 0, 0.1);
+    --transition-speed: 0.3s;
+}
+
+/* Reset and Base Styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif;
+    line-height: 1.6;
+    color: var(--text-primary);
+    background: linear-gradient(135deg, #E3F2FD, #BBDEFB);
+    min-height: 100vh;
+    padding: 20px;
+}
+
+/* Container Styles */
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+/* Typography */
+h1 {
+    font-size: 2.5rem;
+    color: var(--primary-color);
+    text-align: center;
+    margin: 2rem 0;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    text-shadow: 2px 2px 4px var(--shadow-color);
+}
+
+/* Form Styles */
+form {
+    background: var(--background-secondary);
+    padding: 2rem;
+    border-radius: 15px;
+    box-shadow: 0 10px 30px var(--shadow-color);
+    max-width: 800px;
+    margin: 20px auto;
+    position: relative;
+    overflow: hidden;
+}
+
+form::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 5px;
+    background: linear-gradient(to right, var(--primary-color), var(--secondary-color));
+}
+
+/* Input Fields */
+input[type="text"],
+input[type="password"],
+input[type="email"],
+input[type="TIMESTAMP"],
+textarea {
+    width: 100%;
+    padding: 12px 15px;
+    margin: 10px 0;
+    border: 2px solid #e0e0e0;
+    border-radius: 8px;
+    font-size: 1rem;
+    transition: all var(--transition-speed) ease;
+    background-color: var(--background-primary);
+}
+
+input:focus,
+textarea:focus {
+    border-color: var(--primary-color);
+    box-shadow: 0 0 10px rgba(33, 150, 243, 0.2);
+    outline: none;
+    transform: translateY(-2px);
+}
+
+/* Readonly Input Styling */
+input[readonly],
+textarea[readonly] {
+    background-color: #f8f8f8;
+    border: 1px solid #ddd;
+    color: var(--text-secondary);
+    cursor: not-allowed;
+}
+
+/* Label Styling */
+label, form br {
+    display: block;
+    margin: 15px 0 5px;
+    color: var(--text-secondary);
+    font-weight: 500;
+}
+
+/* Button Styles */
+input[type="submit"],
+input[type="reset"] {
+    padding: 12px 30px;
+    border: none;
+    border-radius: 25px;
+    cursor: pointer;
+    font-size: 1rem;
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    transition: all var(--transition-speed) ease;
+    margin: 10px 5px;
+}
+
+input[value="Search"] {
+    background: linear-gradient(45deg, var(--primary-color), #64B5F6);
+    color: white;
+}
+
+input[value="Reset"] {
+    background: #f5f5f5;
+    color: var(--text-secondary);
+}
+
+input[value="response"] {
+    background: linear-gradient(45deg, var(--success-color), #81C784);
+    color: white;
+    width: 100%;
+    margin-top: 20px;
+}
+
+/* Button Hover Effects */
+input[type="submit"]:hover,
+input[type="reset"]:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 5px 15px var(--shadow-color);
+}
+
+/* Message Styling */
+font[color="red"] {
+    display: block;
+    margin: 20px auto;
+    padding: 15px;
+    background-color: rgba(244, 67, 54, 0.1);
+    border-left: 5px solid var(--danger-color);
+    border-radius: 5px;
+    color: var(--danger-color);
+    font-weight: 500;
+    text-align: center;
+    max-width: 800px;
+}
+
+/* Success Message */
+font:not([color]) {
+    display: block;
+    margin: 20px auto;
+    padding: 15px;
+    background-color: rgba(76, 175, 80, 0.1);
+    border-left: 5px solid var(--success-color);
+    border-radius: 5px;
+    color: var(--success-color);
+    font-weight: 500;
+    text-align: center;
+    max-width: 800px;
+}
+
+/* Textarea Specific Styling */
+textarea {
+    min-height: 120px;
+    resize: vertical;
+    font-family: inherit;
+    line-height: 1.5;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    body {
+        padding: 10px;
+    }
+
+    h1 {
+        font-size: 2rem;
+    }
+
+    form {
+        padding: 1.5rem;
+        margin: 10px;
+    }
+
+    input[type="submit"],
+    input[type="reset"] {
+        width: 100%;
+        margin: 5px 0;
+    }
+}
+
+/* Animation for Form Loading */
+@keyframes formFadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+form {
+    animation: formFadeIn 0.5s ease-out;
+}
+
+/* Custom Scrollbar */
+::-webkit-scrollbar {
+    width: 10px;
+}
+
+::-webkit-scrollbar-track {
+    background: var(--background-primary);
+}
+
+::-webkit-scrollbar-thumb {
+    background: var(--primary-color);
+    border-radius: 5px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+    background: #1976D2;
+}

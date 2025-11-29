@@ -1,0 +1,57 @@
+@charset "UTF-8";
+/* NewFile1.css */
+
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #66CCFF; /* Background color for the body */
+}
+
+h1 {
+    color: #cc6600; /* Color for headings */
+    text-align: center; /* Center the heading */
+}
+
+table {
+    width: 800px; /* Set table width */
+    margin: 20px auto; /* Center the table */
+    border-collapse: collapse; /* Collapse borders */
+}
+
+th, td {
+    padding: 10px; /* Padding for table cells */
+    border: 1px solid #ccc; /* Border for table cells */
+    text-align: left; /* Align text to the left */
+}
+
+input[type="text"],
+input[type="password"],
+textarea {
+    width: 30%; /* Full width for inputs */
+    padding: 10px; /* Padding for inputs */
+    margin: 10px 0; /* Margin for spacing */
+    border: 1px solid #ccc; /* Border for inputs */
+    border-radius: 4px; /* Rounded corners */
+}
+
+input[type="submit"],
+input[type="reset"] {
+    background-color: #007BFF; /* Button background color */
+    color: white; /* Button text color */
+    padding: 10px 15px; /* Padding for buttons */
+    border: none; /* No border */
+    border-radius: 4px; /* Rounded corners */
+    cursor: pointer; /* Pointer cursor on hover */
+}
+
+input[type="submit"]:hover,
+input[type="reset"]:hover {
+    background-color: #0056b3; /* Darker background on hover */
+}
+
+font {
+    font-weight: bold; /* Bold font for messages */
+    display: block; /* Display as block for spacing */
+    margin: 10px 0; /* Margin for spacing */
+}

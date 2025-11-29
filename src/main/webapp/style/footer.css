@@ -1,0 +1,38 @@
+@charset "UTF-8";
+/* style/footer.css */
+
+footer {
+    background-color: #333; /* Dark background for the footer */
+    color: white; /* White text color */
+    padding: 20px; /* Padding around the footer */
+    text-align: center; /* Center the text */
+}
+
+.footer-content {
+    display: flex; /* Use flexbox for layout */
+    justify-content: space-around; /* Space out the sections */
+    flex-wrap: wrap; /* Allow wrapping on smaller screens */
+}
+
+.footer-section {
+    flex: 1; /* Allow sections to grow equally */
+    margin: 10px; /* Margin around sections */
+}
+
+.footer-section h3 {
+    margin-bottom: 10px; /* Space below the heading */
+}
+
+.footer-section a {
+    color: #f1c40f; /* Link color */
+    text-decoration: none; /* Remove underline */
+}
+
+.footer-section a:hover {
+    text-decoration: underline; /* Underline on hover */
+}
+
+.footer-bottom {
+    margin-top: 20px; /* Space above the bottom text */
+    font-size: 14px; /* Smaller font size */
+}
