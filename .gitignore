@@ -1,5 +1,6 @@
 # Compiled class files
 *.class
+build/
 
 # Log files
 *.log
@@ -16,8 +17,6 @@ local.properties
 .settings/
 .loadpath
 .recommenders
-.project
-.classpath
 
 # External tool builders
 .externalToolBuilders/
@@ -25,48 +24,8 @@ local.properties
 # Locally stored "Eclipse launch configurations"
 *.launch
 
-# PyDev specific (Python IDE for Eclipse)
-*.pydevproject
-
-# CDT-specific (C/C++ Development Tooling)
-.cproject
-
-# CDT- autotools
-.autotools
-
 # Java annotation processor (APT)
 .factorypath
-
-# PDT-specific (PHP Development Tools)
-.buildpath
-
-# sbteclipse plugin
-.target
-
-# Tern plugin
-.tern-project
-
-# TeXlipse plugin
-.texlipse
-
-# STS (Spring Tool Suite)
-.springBeans
-
-# Code Recommenders
-.recommenders/
-
-# Annotation Processing
-.apt_generated/
-.apt_generated_test/
-
-# Scala IDE specific (Scala & Java development for Eclipse)
-.cache-main
-.scala_dependencies
-.worksheet
-
-# Uncomment this line if you wish to ignore the project description file.
-# Typically, this file would be tracked if it contains build/dependency configurations:
-#.project
 
 # Maven
 target/
@@ -82,7 +41,6 @@ buildNumber.properties
 
 # Gradle
 .gradle
-build/
 !gradle/wrapper/gradle-wrapper.jar
 !**/src/main/**/build/
 !**/src/test/**/build/
@@ -93,8 +51,6 @@ build/
 *.iml
 *.ipr
 out/
-!**/src/main/**/out/
-!**/src/test/**/out/
 
 # NetBeans
 /nbproject/private/
@@ -126,3 +82,13 @@ Desktop.ini
 # virtual machine crash logs
 hs_err_pid*
 replay_pid*
+
+# Environment variables
+.env
+
+# Database backups
+*.sql.backup
+backup_*.sql
+
+# Uploaded files (optional - uncomment if you don't want to track uploads)
+# src/main/webapp/Uploaded_Files/*
